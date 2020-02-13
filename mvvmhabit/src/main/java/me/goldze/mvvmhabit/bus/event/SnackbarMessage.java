@@ -16,8 +16,8 @@
 
 package me.goldze.mvvmhabit.bus.event;
 
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.Observer;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.Observer;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 

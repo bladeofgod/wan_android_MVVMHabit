@@ -1,8 +1,8 @@
 package me.goldze.mvvmhabit.binding.viewadapter.recyclerview;
 
-import android.databinding.BindingAdapter;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.BindingAdapter;
+import androidx.appcompat.widget.LinearLayoutManager;
+import androidx.appcompat.widget.RecyclerView;
 
 import java.util.concurrent.TimeUnit;
 

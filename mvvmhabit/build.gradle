@@ -21,9 +21,10 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     //support
-    api rootProject.ext.support["support-v4"]
-    api rootProject.ext.support["appcompat-v7"]
-    api rootProject.ext.support["recyclerview-v7"]
+    api rootProject.ext.support["support-androidx"]
+    api rootProject.ext.support["appcompat-androidx"]
+    api rootProject.ext.support["recyclerview-androidx"]
+    api rootProject.ext.support['design']
     //rxjava
     api rootProject.ext.dependencies.rxjava
     api rootProject.ext.dependencies.rxandroid
@@ -71,4 +72,5 @@ dependencies {
     //Google LiveData和ViewModel组件
     api rootProject.ext.dependencies["lifecycle-extensions"]
     annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
+    androidTestImplementation 'junit:junit:4.12'
 }
