@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':mvvmhabit'
 rootProject.name='WanAndroid_MVVMHabit'
