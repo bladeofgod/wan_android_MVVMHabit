@@ -2,7 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion "29.0.2"
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     defaultConfig {
         applicationId rootProject.ext.android.applicationId
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -28,6 +31,11 @@ dependencies {
     //implementation 'androidx.fragment.app.FragmentActivity'
     //MVVMHabit
     implementation project(':mvvmhabit')
+
+    //底部tabBar
+    implementation('me.majiajie:pager-bottom-tab-strip:2.3.0X') {
+        exclude group: 'com.android.support'
+    }
     //
     //implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0-beta11'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'

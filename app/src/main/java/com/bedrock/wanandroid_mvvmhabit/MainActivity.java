@@ -4,11 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.bedrock.wanandroid_mvvmhabit.databinding.ActivityMainBinding;
+
+import me.goldze.mvvmhabit.base.BaseActivity;
+import me.goldze.mvvmhabit.base.BaseViewModel;
+
+public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> {
+
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public int initVariableId() {
+        return BR.mainViewModel;
     }
 }

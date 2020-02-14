@@ -1,7 +1,7 @@
 package me.goldze.mvvmhabit.binding.viewadapter.radiogroup;
 
 import androidx.databinding.BindingAdapter;
-import android.support.annotation.IdRes;
+import androidx.annotation.IdRes;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 

@@ -1,7 +1,8 @@
 package me.goldze.mvvmhabit.binding.viewadapter.swiperefresh;
 
 import androidx.databinding.BindingAdapter;
-import androidx.core.widget.SwipeRefreshLayout;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import me.goldze.mvvmhabit.binding.command.BindingCommand;
 

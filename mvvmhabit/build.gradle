@@ -1,5 +1,10 @@
 apply plugin: 'com.android.library'
 android {
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
@@ -21,10 +26,12 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     //support
+    api rootProject.ext.support["support-annotation"]
     api rootProject.ext.support["support-androidx"]
     api rootProject.ext.support["appcompat-androidx"]
     api rootProject.ext.support["recyclerview-androidx"]
     api rootProject.ext.support['design']
+    api rootProject.ext.support['fragment']
     //rxjava
     api rootProject.ext.dependencies.rxjava
     api rootProject.ext.dependencies.rxandroid
@@ -73,4 +80,6 @@ dependencies {
     api rootProject.ext.dependencies["lifecycle-extensions"]
     annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
     androidTestImplementation 'junit:junit:4.12'
+
+
 }

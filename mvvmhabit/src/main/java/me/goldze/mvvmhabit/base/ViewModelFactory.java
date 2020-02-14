@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.core.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

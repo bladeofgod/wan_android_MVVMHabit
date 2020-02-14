@@ -18,6 +18,8 @@ ext {
     support = [
             "constraint-layout"             : "androidx.constraintlayout:constraintlayout:1.1.3",
             'support-androidx'              : 'androidx.legacy:legacy-support-v4:1.0.0',
+            'support-annotation'            : 'androidx.annotation:annotation:1.0.0',
+            'fragment'                      :'androidx.fragment:fragment:1.1.0',
             'appcompat-androidx'            : 'androidx.appcompat:appcompat:1.1.0',
             'recyclerview-androidx'         : 'androidx.recyclerview:recyclerview:1.1.0',
             'design'                        : "com.google.android.material:material:1.1.0",
