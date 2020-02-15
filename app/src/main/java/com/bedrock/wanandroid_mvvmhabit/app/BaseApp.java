@@ -1,4 +1,8 @@
-package com.bedrock.wanandroid_mvvmhabit;
+package com.bedrock.wanandroid_mvvmhabit.app;
+
+import com.bedrock.wanandroid_mvvmhabit.BuildConfig;
+import com.bedrock.wanandroid_mvvmhabit.MainActivity;
+import com.bedrock.wanandroid_mvvmhabit.R;
 
 import me.goldze.mvvmhabit.base.BaseApplication;
 import me.goldze.mvvmhabit.crash.CaocConfig;
