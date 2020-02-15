@@ -5,6 +5,7 @@ import com.bedrock.wanandroid_mvvmhabit.data.source.HttpDataSource;
 import com.bedrock.wanandroid_mvvmhabit.data.source.LocalDataSource;
 import com.bedrock.wanandroid_mvvmhabit.data.source.http.HttpDataSourceImpl;
 import com.bedrock.wanandroid_mvvmhabit.data.source.http.service.WanAndroidAPI;
+import com.bedrock.wanandroid_mvvmhabit.utils.RetrofitClient;
 
 /**
  * @author LiJiaqi
