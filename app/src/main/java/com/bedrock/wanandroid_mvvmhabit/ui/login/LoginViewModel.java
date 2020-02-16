@@ -97,12 +97,21 @@ public class LoginViewModel extends BaseViewModel<MainRepository> {
 
                     }
                 })
+                .compose(RxUtils.exceptionTransformer())
                 .subscribe(new Consumer<BaseResponse<LoginBean>>() {
                     @Override
                     public void accept(BaseResponse<LoginBean> o) throws Exception {
                         dismissDialog();
                         KLog.i("login " + o.getMessage());
                         //ToastUtils.showShort("登陆成功 " + o.getResult().getUsername());
+                    }
+
+                }, new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable throwable) throws Exception {
+                        if (throwable == null){
+
+                        }
                     }
                 }));
 
