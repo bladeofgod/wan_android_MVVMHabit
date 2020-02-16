@@ -89,6 +89,7 @@ public class LoginViewModel extends BaseViewModel<MainRepository> {
                 //网络登录请求
                 model.login(userName.get(), password.get())
                 .compose(RxUtils.schedulersTransformer())
+                .compose(RxUtils.exceptionTransformer())//异常处理
                 .doOnSubscribe(new Consumer<Disposable>() {
                     @Override
                     public void accept(Disposable disposable) throws Exception {
@@ -97,7 +98,7 @@ public class LoginViewModel extends BaseViewModel<MainRepository> {
 
                     }
                 })
-                .compose(RxUtils.exceptionTransformer())
+
                 .subscribe(new Consumer<BaseResponse<LoginBean>>() {
                     @Override
                     public void accept(BaseResponse<LoginBean> o) throws Exception {
