@@ -19,15 +19,25 @@
         android:layout_height="match_parent">
 
         <EditText
+            android:text="@={loginViewModel.userName}"
             android:hint="请输入账号"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/iv_switch_pwd"
+            android:src="@drawable/show_psw_press"
+            onClickCommand="@{loginViewModel.pwdShowSwitchOnClickCommand}"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
         <EditText
             android:hint="请输入密码"
+            android:text="@={loginViewModel.password}"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
+            onClickCommand="@{loginViewModel.loginOnClickCommand}"
             android:text="登录"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"

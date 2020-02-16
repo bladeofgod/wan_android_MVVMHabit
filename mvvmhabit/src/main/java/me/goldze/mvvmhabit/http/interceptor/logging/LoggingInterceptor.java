@@ -74,6 +74,7 @@ public class LoggingInterceptor implements Interceptor {
         long st = System.nanoTime();
         Response response = chain.proceed(request);
 
+
         List<String> segmentList = ((Request) request.tag()).url().encodedPathSegments();
         long chainMs = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - st);
         String header = response.headers().toString();
